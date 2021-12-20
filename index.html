@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <script src="js/index.js" defer></script>
+    <title>Criptomonedas</title>
+</head>
+
+<body onload="opcionesCriptomoneda()">
+    <div class="container">
+        <div class="img" id="imagen">
+            <img src="img/ambos.png" alt="imagen de Criptomonedas">
+        </div>
+        <div class="formulario">
+            <form action="">
+                <div class="msj-error">
+                </div>
+                <div>
+                    <h2>Calculadora de Criptomoneda</h2>
+                </div>
+                <div class="refer">
+                    <div>
+                        <label for="">Seleccione su moneda</label>
+                    </div>
+                    <div>
+                        <select name="monedas" id="seleccion" onchange="cotizarMoneda()">
+                            <option value="USD">Dolar</option>
+                            <option value="ARP">Peso Argentino</option>
+                            <option value="EUR">Euro</option>
+                            <option value="GBP">Libra Esterlina</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Elige tu Criptomoneda</label>
+                    </div>
+                    <div>
+                        <select id="Criptomoneda" onchange="cotizarMoneda()">
+                            
+                        </select>
+                    </div>
+                    <div class="boton">
+                        <button type="button" class="boton" onclick="cotizarMoneda()">Calcular</button>
+                    </div>
+                    <div class="resultado" id="divResultado"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

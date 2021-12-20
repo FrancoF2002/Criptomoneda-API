@@ -1,0 +1,79 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /*background-image: url(https://fondosmil.com/fondo/3885.jpg);*/
+    background-color: black;
+    background-size: cover;  
+}
+.imagen{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    height: 50%;
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+.formulario h2{
+    margin: 0;
+    margin-top: 1px;
+    text-align: center;
+    font-size: 40px;
+    color: blanchedalmond;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label{
+    align-items: center;
+    color: blanchedalmond;
+    font-size: 22px;
+}
+
+select {
+    text-align: center;
+    width: 200px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+
+.refer{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: auto;
+    background-color: burlywood;
+}

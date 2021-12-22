@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" media="(max-width: 480px)" href="css/mobile.css" />
     <script src="js/index.js" defer></script>
     <title>Criptomonedas</title>
 </head>
@@ -18,19 +18,26 @@
         </div>
         <div class="formulario">
             <form action="">
-                <div class="msj-error">
-                </div>
+
                 <div>
-                    <h2>Calculadora de Criptomoneda</h2>
+                    <h2>Cotizacion de Criptomonedas</h2>
+                </div>
+                <div class="imagenes-monedas">
+                    <div> <img src="img/1.png"  width="65px"  alt="logo bitcoin"></div>
+                    <div> <img src="img/2.png"  width="38px" alt="logo etherum"></div>
+                    <div> <img src="img/3.png" width="50px" alt="logo binance"></div>
+                    <div> <img src="img/4.png" width="50px" alt="logo tether"></div>
+                    <div> <img src="img/5.png" width="50px" alt="logo solana"></div>
                 </div>
                 <div class="refer">
                     <div>
                         <label for="">Seleccione su moneda</label>
                     </div>
                     <div>
-                        <select name="monedas" id="seleccion" onchange="cotizarMoneda()">
+                        <select name="monedas" id="moneda" onchange="cotizarMoneda()">
+                            <option disabled selected value="0">- Seleccione -</option>
                             <option value="USD">Dolar</option>
-                            <option value="ARP">Peso Argentino</option>
+                            <option value="MXN">Peso Mexicano</option>
                             <option value="EUR">Euro</option>
                             <option value="GBP">Libra Esterlina</option>
                         </select>
@@ -39,18 +46,23 @@
                         <label for="">Elige tu Criptomoneda</label>
                     </div>
                     <div>
-                        <select id="Criptomoneda" onchange="cotizarMoneda()">
+                        <select id="criptomoneda" onchange="cotizarMoneda()">
                             
                         </select>
                     </div>
-                    <div class="boton">
+                    <!-- <div class="boton">
                         <button type="button" class="boton" onclick="cotizarMoneda()">Calcular</button>
+                    </div> -->
+                    <div class="msj-error" id="msj-error"> FALTA COMPLETAR CAMPOS
                     </div>
                     <div class="resultado" id="divResultado"></div>
+                    <div class="alto" id="divMasAlto" ></div>
+                    <div class="bajo" id="divMasBajo"></div>
+                    <div class="variacion" id="divVariacion"></div>
+                    <div class="actualizacion" id="divActualizacion" ></div>
                 </div>
             </form>
         </div>
     </div>
 </body>
-
 </html>

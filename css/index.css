@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@1,600&display=swap');
 *{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Source Sans 3', sans-serif;
 }
 
 body{
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
 }
+
+
+/* Variedades */
+
 .container{
     display: flex;
     justify-content: center;
@@ -15,10 +22,12 @@ body{
     background-color: black;
     background-size: cover;  
 }
-.imagen{
+.img{
     display: flex;
     justify-content: center;
-    padding: 20px;
+    /* background-image: url(../img/ambos.png); */
+    width: 550px;
+    height: 450px;
 }
 
 .formulario{
@@ -39,6 +48,7 @@ body{
     text-align: center;
     font-size: 40px;
     color: blanchedalmond;
+    font-family: 'Source Sans 3', sans-serif;
 }
 
 form{
@@ -64,16 +74,58 @@ select {
 
 
 .refer{
-    display: block;
+    display: block;    
+}
+
+
+.imagenes-monedas{
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.boton{
+/* Resultados */
+
+.resultado{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: auto;
-    background-color: burlywood;
+    justify-content: flex-start;
+    font-size: 18px;
+    color: rgb(209, 209, 0);
+}
+
+.alto{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 13px;
+    color: rgb(209, 209, 0);
+}
+
+.bajo{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 13px;
+    color: rgb(209, 209, 0);
+}
+
+.variacion{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 13px;
+    color: rgb(209, 209, 0);
+}
+
+.actualizacion{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 13px;
+    color: rgb(209, 209, 0);
+}
+
+/* Actividades opcionales */
+
+/* Activar en caso de activar la validacion en Js donde esta explicado. */
+
+.msj-error{
+    display: none;
+    color: yellow;
 }
